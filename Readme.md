@@ -53,8 +53,8 @@ Here is an example using the `HSV` color space and HOG parameters of `orientatio
 ![alt text](./examples/Hog.png "Extract Hog feature in HSV space")
 This [github repo](https://github.com/asgunzi/CarND-VehicleDetection) has a detailed discussion of how HOG parameter changes will effect the feature extraction.
 ####2. Normalize different features
-In this project I used color space features, HOG features. So it's very likely they are in different scale, in order to make the model not biased towards the larger variables, I scaled them in to comparable range using `sklearn.preprocessing.StandardScaler` function
-![alt text](./examples/normalize.png "normalize features")
+In this project I used color space features, HOG features. So it's very likely they are in different scale, in order to make the model not biased towards the larger variables, I scaled them in to comparable range using `sklearn.preprocessing.StandardScaler` function  
+![alt text](./examples/Normalize.png "normalize features")
 
 ####3. Model tuning
 
@@ -66,7 +66,7 @@ I trained a SVM using grid search. It runs exhaust combin The parameters selecte
 
 I decided to search window using 3 different size. I keep the search window same, but shrink the video image by 1, 1.5 or 2. And I used 75% overlap. 
 
-![alt text](./examples/box.png "Search box on image")
+![alt text](./examples/box.png "Search box on image")  
 ####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Ultimately I searched on 3 scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
