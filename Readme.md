@@ -7,7 +7,7 @@ In this project I used classic Computer Vision techniques, namely HOG features a
 
 ---
 
-###Procedures:
+###Procedures:  
 This project is mainly two parts:  
 - Vehicle images and non-vehicle images **classification**  
 - **Search** through video frame by frame to find cars with in sliding window. With some sanity checks.
@@ -66,7 +66,7 @@ I trained a SVM using grid search. It runs exhaust combin The parameters selecte
 
 I decided to search window using 3 different size. I keep the search window same, but shrink the video image by 1, 1.5 or 2. And I used 75% overlap. 
 
-![alt text](./examples/box.png "Search box on image")  
+![alt text](./examples/Box.png "Search box on image")  
 ####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Ultimately I searched on 3 scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
